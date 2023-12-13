@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="utf-8">
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html', '' }}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:image" content="{{ site.logo | absolute_url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.title }}">
+
+    <link rel="icon" type="{{ site.icon_type }}" href="{{ site.icon | absolute_url }}">
+    <link rel="shortcut icon" type="{{ site.icon_type }}" href="{{ site.icon | absolute_url }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/rip.css' | relative_url }}">
+  </head>
+
+  <body>
+      <header>
+          <img src="{{ site.logo | relative_url }}" alt="logo">
+          <div>{{ site.title }}</div>
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+
+      <footer>
+        <div class="footer-legal-copyright">
+          Copyright © <script>document.write(new Date().getFullYear())</script> 
+          RiP International.
+          All rights reserved.
+        </div>
+      </footer>
+  </body>
+</html>

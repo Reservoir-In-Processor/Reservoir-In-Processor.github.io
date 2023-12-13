@@ -1,0 +1,11 @@
+title: "RiP: Reservoir in Processor"
+description: >- # this means to ignore newlines until "baseurl:"
+  Official website of RiP, Reservoir in Processor.
+logo: "/static/logo/rip.png"
+icon: "/static/logo/rip.jpg"
+icon_type: "image/jpeg"
+domain: "Reservoir-in-Processor.github.io"
+url: "https://Reservoir-in-Processor.github.io"
+github_username:  "Reservoir-in-Processor"
+
+highlighter: rouge
