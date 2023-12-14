@@ -23,8 +23,11 @@
 
   <body>
       <header>
+        <!-- add properties for usability -->
+        <a href="{{ site.url }}" oncontextmenu="return false;" onmousedown="return false;">
           <img src="{{ site.logo | relative_url }}" alt="logo">
-          <div>{{ site.title }}</div>
+        </a>
+        <div class="sitetitle">{{ site.title }}</div>
       </header>
 
       <main>
@@ -37,6 +40,7 @@
           RiP International.
           All rights reserved.
         </div>
+        <img src="http://www.rays-counter.com/d1274_f6_017/657b06f4ace29/" alt="access-counter across the site" hidden>
       </footer>
   </body>
 </html>
